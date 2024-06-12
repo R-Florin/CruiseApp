@@ -1,0 +1,13 @@
+:root {
+  --blue: rgb(81, 113, 255);
+  --azure: rgb(72, 156, 192);
+  --lightorange: hsl(36.14, 100%, 67.45%);
+  --lightblue: hsl(190.69, 100%, 80.2%);
+  --white: #ffffff;
+  --gray: #ddd;
+  --skyblue: rgb(128, 194, 254);
+  --seablue: rgb(0, 32, 72);
+  --bluevariant: #003366;
+  --lightgray: #999;
+  --red: #dc3545;
+}

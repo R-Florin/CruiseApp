@@ -1,0 +1,59 @@
+@import "../../../colors.css";
+
+.about {
+  padding: 50px 20px;
+  background-color: var(--seablue);
+}
+
+.about-info {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-info h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--blue);
+}
+
+.about-info h5 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--lightorange);
+}
+
+.about-info h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--lightorange);
+}
+
+.about-info p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--white);
+
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.about-info span {
+  font-weight: bold;
+  color: var(--lightorange);
+}
+
+@media (max-width: 768px) {
+  .about-info h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-info h5,
+  .about-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-info p {
+    font-size: 0.9rem;
+  }
+}

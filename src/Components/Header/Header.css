@@ -1,0 +1,236 @@
+@import "../../colors.css";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+.cruise-nav {
+  background-color: var(--seablue);
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cruise-nav .navbar-brand {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: auto;
+  color: var(--lightorange);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.cruise-nav .nav-link {
+  color: var(--blue);
+  list-style: none;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cruise-nav .nav-link.active {
+  font-weight: bold;
+  color: var(--skyblue);
+  border-bottom: 2px solid var(--skyblue);
+}
+
+.cruise-nav .nav-link:hover {
+  color: var(--lightblue);
+}
+.custom-toggle {
+  background-color: transparent;
+  border: 2px solid var(--lightblue);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.custom-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 4px auto;
+  background-color: var(--white);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.custom-toggle .bar:nth-child(2) {
+  transform-origin: center;
+}
+
+.custom-toggle.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.custom-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.custom-toggle.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.cruise-nav .form-control {
+  width: 30rem;
+  border: 2px solid var(--blue);
+  border-radius: 19px;
+}
+.cruise-nav .form-control:hover {
+  background-color: var(--skyblue);
+}
+
+.cruise-nav .btn-outline-success-button {
+  color: var(--blue);
+  border-color: var(--blue);
+  font-weight: bold;
+  width: 9rem;
+  border-radius: 19px;
+}
+
+.cruise-nav .btn-outline-success-button:hover {
+  background-color: var(--lightblue);
+  border-color: var(--azure);
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  align-items: center;
+  color: var(--white);
+}
+
+.icons .nav-item {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  margin-left: 1rem;
+  color: var(--white);
+}
+
+.fav-icon {
+  font-size: 2rem;
+  margin-right: 0.8rem;
+  color: var(--lightorange);
+}
+.cart-icon {
+  font-size: 3rem;
+  margin-right: 0.8rem;
+  color: var(--lightorange);
+}
+
+.icon-text {
+  color: var(--white);
+}
+
+.size {
+  position: relative;
+  right: 23px;
+  top: 15px;
+  color: var(--blue);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.search-icon {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-left: 0.8rem;
+  color: var(--lightorange);
+}
+
+@media (max-width: 992px) {
+  .cruise-nav .navbar-collapse {
+    background-color: var(--seablue);
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cruise-nav .nav-link {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .cruise-nav .form-control {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .cruise-nav .icons {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cruise-nav {
+    padding: 0.5rem;
+  }
+
+  .cruise-nav .navbar-brand {
+    font-size: 2rem;
+    margin: 0.5rem auto;
+  }
+
+  .cruise-nav .nav-link {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+
+  .cruise-nav .form-control {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .cruise-nav .btn-outline-success-button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .icons {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .fav-icon,
+  .cart-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cruise-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cruise-nav .navbar-toggler {
+    margin: 0.5rem;
+  }
+
+  .cruise-nav .navbar-brand {
+    font-size: 1.8rem;
+  }
+
+  .cruise-nav .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .cruise-nav .form-control {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .cruise-nav .btn-outline-success-button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .icons {
+    padding: 1rem;
+  }
+}

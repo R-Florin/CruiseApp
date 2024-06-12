@@ -1,0 +1,67 @@
+@import "../../../colors.css";
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 19px;
+}
+.cards {
+  max-width: 400px;
+  background-color: var(--bluevariant);
+  border-radius: 19px;
+  color: var(--white);
+  padding: 9px;
+  margin: 50px;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.cards:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.cards .details {
+  text-align: center;
+}
+.price {
+  font-size: 1.5rem;
+  margin-top: 49px;
+  line-height: 1.6;
+  color: var(--lightorange);
+  margin-bottom: 20px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 9px;
+  border: 1px solid var(--lightorange);
+  margin-bottom: 20px;
+}
+.cards h2 {
+  color: var(--lightorange);
+}
+
+.heart-icon {
+  position: absolute;
+  margin: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--lightorange);
+}
+
+.heart-icon.red {
+  color: red;
+}
+.cards button {
+  color: var(--blue);
+  border-color: var(--blue);
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 9rem;
+  border-radius: 19px;
+}
+.cards button:hover {
+  background-color: var(--lightblue);
+  border-color: var(--azure);
+  color: var(--blue);
+}

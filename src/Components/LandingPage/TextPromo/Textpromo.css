@@ -1,0 +1,37 @@
+.text {
+  background-color: var(--seablue);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 5px;
+}
+.text h2 {
+  font-size: 2.5em;
+  padding: 1.5rem;
+  margin: 1rem;
+  font-weight: bold;
+  color: var(--lightorange);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.text .buttonpro {
+  text-decoration: none;
+  list-style: none;
+  color: var(--blue);
+  font-size: 2em;
+  background-color: var(--lightblue);
+  border: 2px solid var(--blue);
+  border-radius: 19px;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color, color 0.5s;
+}
+.text .buttonpro:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+@import "../../../colors.css";

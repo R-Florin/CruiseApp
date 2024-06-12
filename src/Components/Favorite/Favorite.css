@@ -1,0 +1,149 @@
+.fav-page {
+  display: flex;
+  background-color: var(--bluevariant);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.fav-page .messagefav {
+  background-color: var(--skyblue);
+  display: flex;
+  border-radius: 19px;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  margin: 2rem;
+  text-wrap: wrap;
+}
+
+.messagefav .icon {
+  color: var(--seablue);
+  margin: 9px;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+.messagefav h1 {
+  color: var(--seablue);
+  animation: fadeInOut 7s ease-in-out infinite;
+}
+
+.messagefav h2 {
+  color: var(--white);
+  text-wrap: wrap;
+  animation: fadeInOut 7s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.favorite {
+  padding: 40px;
+  background-color: var(--skyblue);
+  border-radius: 15px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.favbox {
+  display: flex;
+  background-color: var(--blue);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: var(--gray);
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.favimg {
+  display: flex;
+  align-items: center;
+}
+.favimg img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.favremove {
+  background-color: var(--red);
+  color: var(--lightorange);
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.favremove:hover {
+  background-color: #ca0d20;
+}
+
+.favp {
+  color: var(--lightorange);
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .fav-page {
+    flex-direction: column;
+  }
+
+  .fav-page .messagefav {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .favbox {
+    flex-direction: column;
+  }
+
+  .favimg img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fav-page {
+    padding: 15px;
+  }
+
+  .fav-page .messagefav {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .favimg {
+    min-width: 150px;
+  }
+
+  .favimg img {
+    width: 70px;
+    height: 70px;
+  }
+}

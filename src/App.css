@@ -1,0 +1,18 @@
+.Cruise-App {
+  background-color: var(--seablue);
+}
+
+.warning {
+  height: 40px;
+  width: 350px;
+  position: absolute;
+  right: 0;
+  top: 80%;
+  background-color: var(--lightorange);
+  font-size: 1.2rem;
+  color: var(--blue);
+  padding: 5px;
+  border-radius: 9px;
+}
+
+@import "./colors.css";

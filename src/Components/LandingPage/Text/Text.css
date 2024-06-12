@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import "../../../colors.css";
+
+.Logo {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  margin: 29px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 29px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.Logo .t-icon {
+  color: var(--lightorange);
+}
+
+.Logo img {
+  margin: 19px;
+  width: 19rem;
+  height: auto;
+  border-radius: 39px;
+  max-width: 100%;
+}
+
+.Logo h2 {
+  font-family: "Dancing Script", cursive;
+  color: var(--skyblue);
+  font-weight: bold;
+  font-size: 3vw;
+  margin-bottom: 1vw;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .Logo {
+    margin: 40px;
+    padding: 30px;
+  }
+  .Logo img {
+    width: 18rem;
+  }
+  .Logo h2 {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .Logo {
+    margin: 30px;
+    padding: 25px;
+  }
+  .Logo img {
+    width: 16rem;
+  }
+  .Logo h2 {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 480px) {
+  .Logo {
+    margin: 20px;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .Logo img {
+    width: 12rem;
+  }
+  .Logo h2 {
+    font-size: 4vw;
+    margin-bottom: 2vw;
+  }
+}
+
+@media (max-width: 479px) {
+  .Logo {
+    margin: 10px;
+    padding: 15px;
+    flex-direction: column;
+  }
+  .Logo img {
+    width: 10rem;
+    margin: 10px 0;
+  }
+  .Logo h2 {
+    font-size: 5vw;
+    margin-bottom: 2.5vw;
+  }
+}

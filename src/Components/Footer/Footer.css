@@ -1,0 +1,85 @@
+@import "../../colors.css";
+
+.footer {
+  background-color: var(--bluevariant);
+  height: auto;
+}
+
+.footer h5 {
+  color: var(--lightorange);
+}
+
+.footer p,
+.footer a {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.alist {
+  list-style: none;
+  padding: 0;
+}
+
+.alist li {
+  margin-bottom: 19px;
+}
+
+.alist li a {
+  display: flex;
+  align-items: center;
+  color: var(--skyblue);
+  text-decoration: none;
+}
+
+.alist li a:hover {
+  color: var(--blue);
+}
+
+.alist li a svg {
+  margin-right: 9px;
+}
+
+.social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.social li {
+  margin-bottom: 19px;
+}
+
+.social li a {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.social li a svg {
+  margin-right: 9px;
+}
+
+.social li a:hover {
+  color: var(--blue);
+}
+
+@media (max-width: 576px) {
+  .footer .row {
+    text-align: center;
+  }
+
+  .social {
+    align-items: center;
+  }
+}
+
+.footer .text-center {
+  color: var(--lightorange);
+}

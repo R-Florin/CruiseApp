@@ -1,0 +1,101 @@
+@import "../../../colors.css";
+
+.contact {
+  background-color: var(--seablue);
+  display: flex;
+  padding: 2rem;
+  height: auto;
+}
+.contact-icon {
+  color: var(--lightorange);
+  width: 2.5vw;
+  height: 2.5vw;
+  margin: 9px;
+  animation: fadeInOut 9s ease-in-out infinite;
+}
+.contacth1 {
+  color: var(--white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInOut 9s ease-in-out infinite;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.contact-page {
+  margin-top: 50px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: var(--bluevariant);
+  border-radius: 29px;
+  color: var(--white);
+  padding: 3rem;
+}
+.contact-right {
+  background-color: var(--skyblue);
+  padding: 1.5rem;
+  border-radius: 29px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: 0.7s ease-out;
+}
+.contact-left {
+  background-color: var(--skyblue);
+  padding: 1.5rem;
+  border-radius: 29px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: 0.7s ease-out;
+}
+.contact-left:hover,
+.contact-right:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-29px);
+}
+.contact-page h1 {
+  padding: 5rem;
+}
+.contact-page h2 {
+  margin-bottom: 20px;
+  color: var(--lightorange);
+}
+
+.contact-page p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--blue);
+}
+
+.contact-page .form-control {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.contact-page label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--blue);
+}
+
+.contact-page .btn {
+  color: var(--white);
+  border: 2px solid var(--blue);
+  font-weight: bold;
+  width: 9rem;
+  border-radius: 19px;
+}
+
+.contact-page .btn:hover {
+  background-color: var(--blue);
+}

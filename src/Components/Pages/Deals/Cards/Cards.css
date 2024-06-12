@@ -1,0 +1,120 @@
+@import "../../../../colors.css";
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+  background-color: var(--bluevariant);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 400px;
+  margin: 50px;
+  padding: 9px;
+  text-align: center;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card1 img,
+.card2 img,
+.card3 img,
+.card4 img,
+.card5 img {
+  width: 100%;
+  border-radius: 9px;
+  border: 1px solid var(--lightorange);
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.card1 .icon01,
+.card2 .icon01,
+.card3 .icon01,
+.card4 .icon01,
+.card5 .icon01 {
+  position: absolute;
+  margin: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--lightorange);
+}
+
+.card1 h2,
+.card2 h2,
+.card3 h2,
+.card4 h2,
+.card5 h2 {
+  font-size: 1.5rem;
+  color: var(--lightorange);
+  margin-bottom: 15px;
+}
+
+.card1 span p,
+.card2 span p,
+.card3 span p,
+.card4 span p,
+.card5 span p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.card1 span,
+.card2 span,
+.card3 span,
+.card4 span,
+.card5 span {
+  display: block;
+  color: var(--lightorange);
+  font-size: 1.5rem;
+}
+
+.card1 span s,
+.card2 span s,
+.card3 span s,
+.card4 span s,
+.card5 span s {
+  color: var(--white);
+  margin-right: 10px;
+}
+
+.card1 button,
+.card2 button,
+.card3 button,
+.card4 button,
+.card5 button {
+  color: var(--blue);
+  border-color: var(--blue);
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 9rem;
+  border-radius: 19px;
+}
+.card1 button:hover,
+.card2 button:hover,
+.card3 button:hover,
+.card4 button:hover,
+.card5 button:hover {
+  background-color: var(--lightblue);
+  border-color: var(--azure);
+  color: var(--blue);
+}
+
+.deal-card {
+  background-color: var(--seablue);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 19px;
+}
